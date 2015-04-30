@@ -6,11 +6,10 @@ p.lazer[0] = 1
 p.lazer[1] = 1
 p.lazer[2] = 1
 if(pturn){
-    $('#lazer').fadeTo('slow', 1);
+    $('#lazer.p1').fadeTo('slow', 1);
 } else {
-    $('#lazer').fadeTo('slow', 1);
+    $('#lazer.p2').fadeTo('slow', 1);
 }
-$('#lazer').fadeTo('slow', 1);
 } else {console.log("You can't have 2 lazers!")}
     break;
   case 'ROCKET':
@@ -18,7 +17,11 @@ if(p.rocket[0] === 0){
 p.rocket[0] = 1
 p.rocket[1] = 1
 p.rocket[2] = 0
-console.log("Finishing frames");
+if(pturn){
+    $('#rocket.p1').fadeTo('slow', 1);
+} else {
+    $('#rocket.p2').fadeTo('slow', 1);
+}
 } else {console.log("You can't have 2 rokets!")}
     break;
   case 'ORB':
@@ -26,7 +29,11 @@ if(p.orb[0] === 0){
 p.orb[0] = 1
 p.orb[1] = 2
 p.orb[2] = 0
-console.log("ORB online")
+if(pturn){
+    $('#orb.p1').fadeTo('slow', 1);
+} else {
+    $('#orb.p2').fadeTo('slow', 1);
+}
 } else {console.log("You can't have 2 orbs!")}
   default:
     console.log("I don't think that's a Gadget!");
