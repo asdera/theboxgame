@@ -8,6 +8,7 @@ var player = function (name, handicap) {
     this.rocket = [0, 0, 0];
     this.orb = [0, 0, 0];
     this.action = "none";
+    this.gadget = "none";
     this.alive = true;
 }
 
