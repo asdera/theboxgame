@@ -5,10 +5,10 @@ function your_turn (p1, p2){
 
     switch(p1.action) {
   case 'BUILD':
-    build(p1, prompt("What would you like to build? A lazer, rocket or orb").toUpperCase())
+    build(p1, p1.gadget)
     break;
   case 'UPGRADE':
-    upgrade(p1, prompt("What would you like to upgrade?").toUpperCase())
+    upgrade(p1, p1.gadget)
     break;
   case 'ATTACK':
     attack(p1, p2)
