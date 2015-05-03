@@ -1,4 +1,7 @@
 $(document).ready(function () {
+    $(function() {
+    $('.banner').unslider();
+});
     $('#turn').empty();
     $('#turn').append("It's " + p1.name + "'s turn");
     $('.p1').fadeTo('slow', 0.2);
