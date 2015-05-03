@@ -25,6 +25,18 @@ $(document).ready(function () {
         p1.action = "ATTACK";
         p2.action = "ATTACK";
     });
+    $('#lazer').click(function () {
+        p1.gadget = "Lazer";
+        p2.gadget = "Lazer";
+    });
+    $('#rocket').click(function () {
+        p1.gadget = "Rocket";
+        p1.gadget = "Rocket";
+    });
+    $('#orb').click(function () {
+        p1.gadget = "Orb";
+        p2.gadget = "Orb";
+    });
     $('#enter').click(function () {
         if (pturn) {
             your_turn(p1, p2)
