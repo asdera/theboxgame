@@ -1,6 +1,10 @@
 body {
 }
 
+.banner { position: relative; overflow: auto; }
+    .banner li { list-style: none; }
+        .banner ul li { float: left; }
+
 gg{
     font-size: 25px;
     text-align: center;
